@@ -6,7 +6,7 @@ setup(
     name="redis-sync",
     version=version,
     description='Redis sync tool that public cloud',
-    url='https://github.com/cxjchocolate/alerta-contrib',
+    url='https://github.com/cctv86/redis-sync',
     license='MIT',
     author='zhigang.hong',
     author_email='627849521@qq.com',
