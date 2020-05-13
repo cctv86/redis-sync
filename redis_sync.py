@@ -32,7 +32,8 @@ def redis_sync(src_host,src_port,src_db,src_passwd,dest_host,dest_port,dest_db,d
                 r2.rpush(k,llist[i])
         elif s.decode() == "hash":
             val = r1.hgetall(k)
-            r2.hset(k,**val)
+            for k1,v in val.items():
+                r2.hset(name=k,key=k1,value=v)
         elif s.decode() == "set":
             lset = r1.smembers(k)
             r2.sadd(k,*lset)
