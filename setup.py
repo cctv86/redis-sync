@@ -14,5 +14,5 @@ setup(
     py_modules=['redis-sync'],
     install_requires=['redis >= 3.5.1',],
     include_package_data=True,
-    zip_safe=True,
+    zip_safe=False,
 )
